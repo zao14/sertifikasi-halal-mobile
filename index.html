@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Zao</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      font-family: sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: url();
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      font-size: 14px;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    nav ul li a:hover {
+      color: #927546;
+      border-bottom: 2px solid #927546;
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+      color: black;
+    }
+
+    .content h2 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .content h2 span {
+      color: #927546;
+    }
+
+    .content p {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .btns {
+      margin-top: 30px;
+    }
+
+    .know-more-btn {
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      background: transparent;
+      border-radius: 1rem;
+      color: #fff;
+      font-size: 14px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .know-more-btn:hover {
+      background: #927546;
+      border: none;
+      color: #fff;
+    }
+
+    .wa-horizontal {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .wa-horizontal img {
+      width: 26px;
+      height: 26px;
+      margin-right: 8px;
+    }
+
+    .wa-horizontal span {
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .order-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      animation: kelapk-kelip 1s infinite;
+      z-index: 998;
+    }
+
+    @keyframes kelapk-kelip {
+      0%   { background-color: #25d366; color: white; }
+      25%  { background-color: #128c7e; color: yellow; }
+      50%  { background-color: #25d366; color: white; }
+      75%  { background-color: #128c7e; color: yellow; }
+      100% { background-color: #25d366; color: white; }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background: #000;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+      }
+
+      .content h2 {
+        font-size: 22px;
+      }
+
+      .content p {
+        font-size: 13px;
+      }
+
+      .logo {
+        width: 53px;
+      }
+    }
+
+    .sambutan {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #927546;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px 20px;
+      margin-bottom: 5px;
+      max-width: 1090px;
+      border-radius: 10px;
+    }
+
+    #flag-counter {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background-color: white;
+      padding: 5px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .nama-pojok {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.8);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #333;
+  z-index: 9999;
+}
+
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="new.png" class="logo" alt="Logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Certification-services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <div class="sambutan">
+      ✨ Selamat datang di website sertifikasi halal terbaik di Indonesia! ✨<br>Jasa Pendamping dan Penyelia Produk Halal Resmi
+    </div>
+
+    <div class="content">
+      <p></p>
+    </div>
+  </div>
+
+  <!-- Tombol WhatsApp Melayang -->
+  <a href="https://wa.me/6281330937937" class="wa-horizontal" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
+    <span>Hubungi Kami</span>
+  </a>
+
+  <!-- Bar Order via WhatsApp Kelap Kelip -->
+  <a href="https://wa.me/6281330937937" class="order-bar" target="_blank">
+    Order via WhatsApp: 0813-309-379-37
+  </a>
+
+ 
+   
+  </div>
+</body>
+<div class="nama-pojok">Penyelia Halal: Dienov <br> Email: dielanovelia@gmail.com <br> Alamat: Pendem Junrejo <br> Kota Batu 65324 </div>
+  
+</html>

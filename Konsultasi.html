@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konsultasi Sertifikat Halal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('p.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      width: 90px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+      color: #927546;
+      border-bottom: 2px solid #927546;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    .wa-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .container {
+        margin: 50px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="Sertifikat-Halal-.jpg" class="logo" alt="Logo Halal" />
+    <ul>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Konsultasi Sertifikat Halal</h2>
+    <form onsubmit="return redirectToWA()">
+      <input type="text" id="nama" placeholder="Nama Anda" required />
+      <textarea id="pesan" placeholder="Pertanyaan atau kebutuhan Anda..." rows="5" required></textarea>
+      <button class="wa-button" type="submit">Kirim via WhatsApp</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToWA() {
+      const nama = document.getElementById('nama').value;
+      const pesan = document.getElementById('pesan').value;
+      const teks = `Halo, saya *${nama}* berminat dengan sertifikat halal. Pesan saya: ${pesan}`;
+      const link = `https://wa.me/6281330937937?text=${encodeURIComponent(teks)}`;
+      window.open(link, '_blank');
+      return false; // prevent form submit
+    }
+  </script>
+
+</body>
+</html>
