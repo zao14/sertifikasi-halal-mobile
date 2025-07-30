@@ -214,8 +214,8 @@
       text-align: right;
     }
 
-    /* Traffic Feed pojok kiri */
-    .traffic-feed {
+    /* Traffic Feed kiri */
+    .traffic-feed-kiri {
       position: fixed;
       top: 10px;
       left: 10px;
@@ -225,17 +225,18 @@
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
-    .traffic-feed {
-  position: fixed;
-  top: 10px;
-  right: 38px;
-  z-index: 1000;
-  background-color: white;
-  padding: 5px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
 
+    /* Traffic Feed kanan */
+    .traffic-feed-kanan {
+      position: fixed;
+      top: 10px;
+      right: 50px;
+      z-index: 1000;
+      background-color: white;
+      padding: 5px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -280,23 +281,21 @@
     Kota Batu 65324
   </div>
 
-  <!-- Live Traffic Feed di pojok kiri -->
-  <!-- Live Traffic Feed (Full Version) - Pojok Kiri Atas -->
-<div class="traffic-feed">
-  <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/static-counter/live.v2.js?ro=0&tz=Asia/Jakarta&style=default"></script>
-  <noscript id="LTF_counter_href">
-    <a href="https://livetrafficfeed.com/website-counter">Traffic Count</a>
-  </noscript>
+  <!-- Live Traffic Feed - KIRI -->
+  <div class="traffic-feed-kiri">
+    <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/static-counter/live.v2.js?ro=0&tz=Asia/Jakarta&style=default"></script>
+    <noscript id="LTF_counter_href">
+      <a href="https://livetrafficfeed.com/website-counter">Traffic Count</a>
+    </noscript>
+  </div>
 
-    <!-- Live Traffic Feed by Lokasi (di bawah nama Diela) -->
-  <div class="traffic-feed" style="margin-top: 65px;">
+  <!-- Live Traffic Feed - KANAN -->
+  <div class="traffic-feed-kanan">
     <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/v5/live.js?bc=ffffff&tc=000000&brd1=2853a8&lnk=135d9e&hc=ffffff&hfc=2853a8&nc=19ff19&vv=210&tft=10&ro=0&tz=Asia%2FJakarta&res=0"></script>
     <noscript id="LTF_live_website_visitor">
       <a href="http://livetrafficfeed.com">Stat Counter</a>
     </noscript>
   </div>
-
-</div>
 
 </body>
 </html>
