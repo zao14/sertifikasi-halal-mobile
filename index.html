@@ -199,7 +199,23 @@
       border-radius: 10px;
     }
 
-    #flag-counter {
+    /* Nama Diela pojok kanan */
+    .nama-pojok {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      background-color: rgba(255,255,255,0.8);
+      padding: 6px 10px;
+      border-radius: 8px;
+      color: #333;
+      z-index: 9999;
+      text-align: right;
+    }
+
+    /* Traffic Feed pojok kiri */
+    .traffic-feed {
       position: fixed;
       top: 10px;
       left: 10px;
@@ -209,19 +225,6 @@
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
-    .nama-pojok {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(255,255,255,0.8);
-  padding: 6px 10px;
-  border-radius: 8px;
-  color: #333;
-  z-index: 9999;
-}
-
   </style>
 </head>
 <body>
@@ -258,10 +261,22 @@
     Order via WhatsApp: 0813-309-379-37
   </a>
 
- 
-   
+  <!-- Nama Diela Novelia -->
+  <div class="nama-pojok">
+    Penyelia Halal: Diela Novelia<br>
+    Email: dielanovelia@gmail.com<br>
+    Alamat: Pendem Junrejo<br>
+    Kota Batu 65324
   </div>
+
+  <!-- Live Traffic Feed di pojok kiri -->
+  <!-- Live Traffic Feed (Full Version) - Pojok Kiri Atas -->
+<div class="traffic-feed">
+  <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/static-counter/live.v2.js?ro=0&tz=Asia/Jakarta&style=default"></script>
+  <noscript id="LTF_counter_href">
+    <a href="https://livetrafficfeed.com/website-counter">Traffic Count</a>
+  </noscript>
+</div>
+
 </body>
-<div class="nama-pojok">Penyelia Halal: Dienov <br> Email: dielanovelia@gmail.com <br> Alamat: Pendem Junrejo <br> Kota Batu 65324 </div>
-  
 </html>
