@@ -173,6 +173,10 @@
         margin-top: 10px;
       }
 
+      nav ul li a {
+        color: white;
+      }
+
       .content h2 {
         font-size: 22px;
       }
@@ -196,46 +200,44 @@
       margin-bottom: 5px;
       max-width: 1090px;
       border-radius: 10px;
+      margin: auto;
     }
 
-    /* Nama Diela pojok kanan */
     .nama-pojok {
-      float: right;
-      margin: 10px 10px 0 0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
       font-size: 10px;
       font-weight: bold;
       background-color: rgba(255,255,255,0.8);
       padding: 6px 10px;
       border-radius: 8px;
       color: #333;
-      text-align: right;
+      z-index: 997;
     }
 
-    /* Traffic Feed kiri */
-    .traffic-feed-kiri {
-      float: left;
-      margin: 10px 0 0 10px;
-      background-color: white;
-      padding: 5px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      width: fit-content;
-    }
-
-    /* Traffic Feed kanan */
+    .traffic-feed-kiri,
     .traffic-feed-kanan {
-      float: right;
-      margin: 10px 10px 0 0;
+      position: fixed;
+      top: 10px;
       background-color: white;
       padding: 5px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
       width: fit-content;
+      z-index: 996;
+    }
+
+    .traffic-feed-kiri {
+      left: 10px;
+    }
+
+    .traffic-feed-kanan {
+      right: 150px;
     }
   </style>
 </head>
 <body>
-  <!-- Nama Diela Novelia -->
   <div class="nama-pojok">
     Penyelia Halal: Diela Novelia<br>
     Email: dielanovelia@gmail.com<br>
@@ -243,13 +245,11 @@
     Kota Batu 65324
   </div>
 
-  <!-- Live Traffic Feed - KIRI -->
   <div class="traffic-feed-kiri">
     <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/static-counter/live.v2.js?ro=0&tz=Asia/Jakarta&style=default"></script>
     <noscript><a href="https://livetrafficfeed.com/website-counter">Traffic Count</a></noscript>
   </div>
 
-  <!-- Live Traffic Feed - KANAN -->
   <div class="traffic-feed-kanan">
     <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/v5/live.js?bc=ffffff&tc=000000&brd1=2853a8&lnk=135d9e&hc=ffffff&hfc=2853a8&nc=19ff19&vv=210&tft=10&ro=0&tz=Asia%2FJakarta&res=0"></script>
     <noscript><a href="http://livetrafficfeed.com">Stat Counter</a></noscript>
@@ -273,22 +273,20 @@
     </div>
 
     <div class="content">
-      <p></p>
+      <h2>Website <span>Zao</span></h2>
+      <p>Website ini dibuat khusus untuk layanan sertifikasi halal dengan dukungan penyelia resmi.</p>
     </div>
   </div>
 
-  <!-- Tombol WhatsApp Melayang -->
   <a href="https://wa.me/6281330937937" class="wa-horizontal" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
     <span>Hubungi Kami</span>
   </a>
 
-  <!-- Bar Order via WhatsApp Kelap Kelip -->
   <a href="https://wa.me/6281330937937" class="order-bar" target="_blank">
     Order via WhatsApp: 0813-309-379-37
   </a>
 
-  <!-- Ruang agar bisa scroll -->
   <div style="height: 599px;"></div>
 </body>
 </html>
