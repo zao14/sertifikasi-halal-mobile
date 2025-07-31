@@ -35,6 +35,7 @@
       justify-content: center;
       padding: 15px 20px;
       gap: 10px;
+      position: relative;
     }
 
     .logo {
@@ -194,10 +195,10 @@
       border-radius: 10px;
     }
 
-    /* Nama Diela pojok kanan */
     .nama-pojok {
-      float: right;
-      margin: 10px 10px 0 0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
       font-size: 10px;
       font-weight: bold;
       background-color: rgba(255,255,255,0.8);
@@ -205,37 +206,48 @@
       border-radius: 8px;
       color: #333;
       text-align: right;
+      z-index: 999;
     }
 
-    /* Traffic Feed kiri */
     .traffic-feed-kiri {
-      position: absolute;
-      top: 20px;
+      position: fixed;
+      top: 10px;
       left: 10px;
       background-color: white;
       padding: 5px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
       width: fit-content;
-      z-index: 5;
+      z-index: 998;
     }
 
-    /* Traffic Feed kanan */
     .traffic-feed-kanan {
-      position: absolute;
-      top: 80px; /* disesuaikan agar tidak nutupi tulisan */
+      position: fixed;
+      top: 80px;
       right: 10px;
       background-color: white;
       padding: 5px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
       width: fit-content;
-      z-index: 5;
+      z-index: 998;
+    }
+
+    .traffic-mini {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 4px;
+      border-radius: 6px;
+      z-index: 999;
+      font-size: 10px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <!-- Nama Diela Novelia -->
   <div class="nama-pojok">
     Penyelia Halal: Diela Novelia<br>
     Email: dielanovelia@gmail.com<br>
@@ -243,13 +255,11 @@
     Kota Batu 65324
   </div>
 
-  <!-- Live Traffic Feed - KIRI -->
   <div class="traffic-feed-kiri">
     <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/static-counter/live.v2.js?ro=0&tz=Asia/Jakarta&style=default"></script>
     <noscript><a href="https://livetrafficfeed.com/website-counter">Traffic Count</a></noscript>
   </div>
 
-  <!-- Live Traffic Feed - KANAN -->
   <div class="traffic-feed-kanan">
     <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/v5/live.js?bc=ffffff&tc=000000&brd1=2853a8&lnk=135d9e&hc=ffffff&hfc=2853a8&nc=19ff19&vv=210&tft=10&ro=0&tz=Asia%2FJakarta&res=0"></script>
     <noscript><a href="http://livetrafficfeed.com">Stat Counter</a></noscript>
@@ -257,6 +267,11 @@
 
   <div class="hero">
     <nav>
+      <!-- Live mini di atas logo -->
+      <div class="traffic-mini">
+       <script type="text/javascript" src="https://cdn.livetrafficfeed.com/static/online/live.v2.js?text=ffffff&bg=e61c1c&ro=0&tz=Asia/Jakarta&style=default"></script><noscript id="LTF_online_website"><a href="http://livetrafficfeed.com/online-counter">Site Online Counter</a></noscript>
+      </div>
+
       <img src="new.png" class="logo" alt="Logo" />
       <ul>
         <li><a href="#">Home</a></li>
@@ -277,18 +292,16 @@
     </div>
   </div>
 
-  <!-- Tombol WhatsApp Melayang -->
   <a href="https://wa.me/6281330937937" class="wa-horizontal" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
     <span>Hubungi Kami</span>
   </a>
 
-  <!-- Bar Order via WhatsApp Kelap Kelip -->
   <a href="https://wa.me/6281330937937" class="order-bar" target="_blank">
     Order via WhatsApp: 0813-309-379-37
   </a>
 
-  <!-- Ruang agar bisa scroll -->
+  <!-- Biar bisa scroll -->
   <div style="height: 600px;"></div>
 </body>
 </html>
