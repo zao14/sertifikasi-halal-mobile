@@ -205,6 +205,19 @@
         width: 53px;
       }
     }
+    .gambar-tengah {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; /* ukuran awal */
+      transition: transform 0.3s ease, width 0.3s ease;
+      z-index: 999;
+    }
+
+    .gambar-tengah:hover {
+      transform: translate(-50%, -50%) scale(1.5); /* dibesarin pas hover */
+    }
   </style>
 </head>
 <body>
@@ -250,8 +263,7 @@
     </div>
 
     <div class="content">
-      <h2>Judul Halaman <span>Sertifikat Halal</span></h2>
-      <p>Ini adalah bagian konten utama halaman, Anda bisa menambahkan apa saja di sini seperti penjelasan layanan, informasi penting, dsb.</p>
+      
     </div>
   </div>
 
@@ -271,4 +283,6 @@
     <h1 style="text-align: center; padding-top: 100px;">Scroll ke bawah ya!</h1>
   </div>
 </body>
+   <img src="brab.jpg" class="gambar-tengah" alt="Logo Zao">
+<html>
 </html>
