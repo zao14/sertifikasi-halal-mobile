@@ -20,7 +20,9 @@
 
     .hero {
       min-height: 100vh;
-      background: linear-gradient(white, lightgray);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -33,16 +35,10 @@
       justify-content: center;
       padding: 15px 20px;
       gap: 10px;
-      z-index: 995;
     }
 
     .logo {
       width: 120px;
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 996;
     }
 
     nav ul {
@@ -51,7 +47,6 @@
       gap: 10px;
       justify-content: center;
       padding: 0;
-      margin-top: 100px;
     }
 
     nav ul li a {
@@ -139,7 +134,7 @@
 
     .traffic-mini {
       position: fixed;
-      top: 80px;
+      top: 60px;
       left: 50%;
       transform: translateX(-50%);
       background-color: white;
@@ -213,6 +208,7 @@
   </style>
 </head>
 <body>
+  <!-- Elemen yang Tetap di Tempat -->
   <div class="nama-pojok">
     Penyelia Halal: Diela Novelia<br>
     Email: dielanovelia@gmail.com<br>
@@ -235,15 +231,7 @@
     <noscript><a href="http://livetrafficfeed.com/online-counter">Online Counter</a></noscript>
   </div>
 
-  <a href="https://wa.me/6281330937937" class="wa-horizontal" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
-    <span>Hubungi Kami</span>
-  </a>
-
-  <a href="https://wa.me/6281330937937" class="order-bar" target="_blank">
-    Order via WhatsApp: 0813-309-379-37
-  </a>
-
+  <!-- Konten Halaman -->
   <div class="hero">
     <nav>
       <img src="new.png" class="logo" alt="Logo" />
@@ -267,7 +255,19 @@
     </div>
   </div>
 
-  <div style="height: 2000px;">
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6281330937937" class="wa-horizontal" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
+    <span>Hubungi Kami</span>
+  </a>
+
+  <!-- Bar Order WhatsApp -->
+  <a href="https://wa.me/6281330937937" class="order-bar" target="_blank">
+    Order via WhatsApp: 0813-309-379-37
+  </a>
+
+  <!-- Konten Dummy agar bisa Scroll -->
+  <div style="height: 2000px; background: linear-gradient(white, lightgray);">
     <h1 style="text-align: center; padding-top: 100px;">Scroll ke bawah ya!</h1>
   </div>
 </body>
