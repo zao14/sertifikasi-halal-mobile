@@ -16,6 +16,7 @@
 
     body {
       overflow-x: hidden;
+      max-width: 100vw;
     }
 
     .hero {
@@ -26,6 +27,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
     }
 
     nav {
@@ -35,6 +37,7 @@
       justify-content: center;
       padding: 15px 20px;
       gap: 10px;
+      width: 100%;
     }
 
     .logo {
@@ -65,6 +68,7 @@
       text-align: center;
       padding: 40px 20px;
       color: black;
+      width: 100%;
     }
 
     .content h2 {
@@ -192,6 +196,21 @@
       25%, 75% { background-color: #128c7e; color: yellow; }
     }
 
+    .gambar-tengah {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s ease, width 0.3s ease;
+      z-index: 994;
+    }
+
+    .gambar-tengah:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
     @media (max-width: 600px) {
       nav ul {
         flex-direction: column;
@@ -204,25 +223,20 @@
       .logo {
         width: 53px;
       }
-    }
-    .gambar-tengah {
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200px; /* ukuran awal */
-      heigt: auto;
-      transition: transform 0.3s ease, width 0.3s ease;
-      z-index: 994;
-    }
 
-    .gambar-tengah:hover {
-      transform: translate(-50%, -50%) 
+      .sambutan {
+        font-size: 16px;
+      }
+
+      .gambar-tengah {
+        width: 140px;
+        top: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Elemen yang Tetap di Tempat -->
+  <!-- Elemen Tetap -->
   <div class="nama-pojok">
     Penyelia Halal: Diela Novelia<br>
     Email: dielanovelia@gmail.com<br>
@@ -244,10 +258,10 @@
     <script id="_wauq4z">var _wau = _wau || []; _wau.push(["dynamic", "17xsacrube", "q4z", "a4c2f4ffffff", "big"]);</script><script async src="//waust.at/d.js"></script>
   </div>
 
-  <!-- Konten Halaman -->
+  <!-- Hero Section -->
   <div class="hero">
     <nav>
-      <img src="new.png" class="logo" alt="Logo" />
+      <img src="new.png" class="logo" alt="Logo Zao" />
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="About.html">About</a></li>
@@ -263,8 +277,10 @@
     </div>
 
     <div class="content">
-      
+      <!-- Tambahkan konten di sini jika mau -->
     </div>
+
+    <img src="halal.jpg" class="gambar-tengah" alt="Logo Zao" />
   </div>
 
   <!-- Tombol WhatsApp -->
@@ -278,12 +294,7 @@
     Order via WhatsApp: 0813-309-379-37
   </a>
 
-  <!-- Konten Dummy agar bisa Scroll -->
-  <div style="height: 1000px; background: linear-gradient(white, lightgray);">
-    <h1 style="text-align: center; padding-top: 100px;"></h1>
-  </div>
+  <!-- Dummy agar bisa discroll -->
+  <div style="height: 500px; background: linear-gradient(white, lightgray);"></div>
 </body>
-   <img src="halal.jpg" class="gambar-tengah" alt="Logo Zao">
-<html>
 </html>
-
